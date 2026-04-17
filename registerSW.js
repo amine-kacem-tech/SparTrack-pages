@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/SparTrack-pages/sw.js', { scope: '/SparTrack-pages/' })})}
