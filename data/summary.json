@@ -1,0 +1,197 @@
+{
+  "generatedAt": "2026-04-23T11:39:30.270Z",
+  "week": "23. April 2026",
+  "totalOffers": 2128,
+  "stores": 10,
+  "topDeals": [
+    {
+      "name": "Creatable Tafelservice Vesuvio 12-teilig",
+      "store": "Lidl",
+      "price": 39.99,
+      "originalPrice": 139.99,
+      "discountPct": 71,
+      "imageUrl": "https://mg2de.b-cdn.net/api/v1/offers/22663688/images/default/0/medium.webp"
+    },
+    {
+      "name": "Emaille Milchtopf oder Schüssel",
+      "store": "Netto",
+      "price": 5.99,
+      "originalPrice": 19.99,
+      "discountPct": 70,
+      "imageUrl": "https://www.netto-online.de/media_nfs/images/2026-17/359017-450x450-Emaille-milchtopf-schuessel-neu-n.webp"
+    },
+    {
+      "name": "Pointee Pasta 500 g",
+      "store": "Netto",
+      "price": 0.99,
+      "originalPrice": 2.69,
+      "discountPct": 63,
+      "imageUrl": "https://www.netto-online.de/media_nfs/images/2026-17/875549-450x450-Pointee-Pasta-n.webp"
+    },
+    {
+      "name": "Massagematte",
+      "store": "Netto",
+      "price": 29.99,
+      "originalPrice": 79.99,
+      "discountPct": 63,
+      "imageUrl": "https://www.netto-online.de/media_nfs/images/2026-17/332300-450x450-Massagematte-einzeln-neu-n.webp"
+    },
+    {
+      "name": "BARILLA Classic Pasta",
+      "store": "Kaufland",
+      "price": 0.79,
+      "originalPrice": 1.99,
+      "discountPct": 60,
+      "imageUrl": "https://kaufland.media.schwarz/is/image/schwarz/8076800195057_DE_P-1"
+    },
+    {
+      "name": "Milprima Fruuut auf Joghurt",
+      "store": "Penny",
+      "price": 0.39,
+      "originalPrice": 0.97,
+      "discountPct": 60,
+      "imageUrl": "https://mg2de.b-cdn.net/api/v1/offers/22558526/images/default/0/medium.webp"
+    },
+    {
+      "name": "SCHEPPACH Mobile Werkstatt C-DTB74/2-12 V",
+      "store": "Penny",
+      "price": 39.99,
+      "originalPrice": 99,
+      "discountPct": 60,
+      "imageUrl": "https://cdn.penny.de/dam/jcr:b993f109-2383-46ff-b1b9-44a4527ebf88/52927286.png?impolicy=title&imwidth=450"
+    },
+    {
+      "name": "Treteimer „Paso“",
+      "store": "Netto",
+      "price": 12.99,
+      "originalPrice": 31.99,
+      "discountPct": 59,
+      "imageUrl": "https://www.netto-online.de/media_nfs/images/2026-17/347468-450x450-Treteimer-paso-neu-n.webp"
+    },
+    {
+      "name": "Port./marokk. Himbeeren Kl. I",
+      "store": "Kaufland",
+      "price": 1.49,
+      "originalPrice": 3.49,
+      "discountPct": 57,
+      "imageUrl": "https://kaufland.media.schwarz/is/image/schwarz/00374272FR"
+    },
+    {
+      "name": "MEGGLE Butter",
+      "store": "Kaufland",
+      "price": 1.11,
+      "originalPrice": 2.59,
+      "discountPct": 57,
+      "imageUrl": "https://kaufland.media.schwarz/is/image/schwarz/00603282_Mengenbegrenzung-Aktion"
+    }
+  ],
+  "storeHighlights": [
+    {
+      "store": "Lidl",
+      "count": 197,
+      "bestDeal": {
+        "name": "Creatable Tafelservice Vesuvio 12-teilig",
+        "discountPct": 71
+      }
+    },
+    {
+      "store": "Netto",
+      "count": 402,
+      "bestDeal": {
+        "name": "Emaille Milchtopf oder Schüssel",
+        "discountPct": 70
+      }
+    },
+    {
+      "store": "Kaufland",
+      "count": 308,
+      "bestDeal": {
+        "name": "BARILLA Classic Pasta",
+        "discountPct": 60
+      }
+    },
+    {
+      "store": "Penny",
+      "count": 284,
+      "bestDeal": {
+        "name": "Milprima Fruuut auf Joghurt",
+        "discountPct": 60
+      }
+    },
+    {
+      "store": "Müller",
+      "count": 24,
+      "bestDeal": {
+        "name": "GOURMETmaxx Reiskocher mit Gartopf",
+        "discountPct": 55
+      }
+    },
+    {
+      "store": "dm",
+      "count": 59,
+      "bestDeal": {
+        "name": "dmBio Frucht & Getreide Apfel & Birne in Haferberei ab dem 5. Monat, 190 g",
+        "discountPct": 53
+      }
+    },
+    {
+      "store": "Aldi Nord",
+      "count": 169,
+      "bestDeal": {
+        "name": "MÜLLER Joghurt mit der Ecke",
+        "discountPct": 51
+      }
+    },
+    {
+      "store": "Edeka",
+      "count": 262,
+      "bestDeal": {
+        "name": "Exquisa Frischkäse 175g",
+        "discountPct": 48
+      }
+    },
+    {
+      "store": "REWE",
+      "count": 279,
+      "bestDeal": {
+        "name": "Müller Müllermilch",
+        "discountPct": 47
+      }
+    },
+    {
+      "store": "Aldi Süd",
+      "count": 144,
+      "bestDeal": {
+        "name": "BARISSIMO Caffè Gustoso Ganze Bohne 1 kg",
+        "discountPct": 27
+      }
+    }
+  ],
+  "categoryDeals": [],
+  "tagDeals": [
+    {
+      "tag": "beverage",
+      "name": "Mionetto Prosecco Treviso Brut",
+      "store": "Lidl",
+      "price": 5.99
+    },
+    {
+      "tag": "vegan",
+      "name": "Vemondo Veganer Salat",
+      "store": "Lidl",
+      "price": 0.79
+    },
+    {
+      "tag": "alcohol",
+      "name": "Smirnoff Vodka No. 21",
+      "store": "Lidl",
+      "price": 14.99
+    },
+    {
+      "tag": "bio",
+      "name": "BioBio Bio-Ingwer",
+      "store": "Netto",
+      "price": 0.49
+    }
+  ]
+}
