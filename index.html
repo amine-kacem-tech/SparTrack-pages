@@ -14,10 +14,72 @@
     <meta property="og:description" content="Compare weekly supermarket deals across Aldi, REWE, Lidl, Kaufland, Netto, Penny, Edeka and more" />
     <meta property="og:type" content="website" />
     <title>SparTrack</title>
-    <script type="module" crossorigin src="/SparTrack-pages/assets/index-BsWV3H-a.js"></script>
-    <link rel="stylesheet" crossorigin href="/SparTrack-pages/assets/index-CcccG7QJ.css">
+    <style>
+      /* Pre-React boot loader. Lives inside #root and is auto-removed the
+         moment createRoot().render() commits (React replaces #root's
+         children), so no cleanup JS is needed. Mirrors the in-app
+         TopProgressBar (2px top bar, accent #2563eb, progress-slide keyframe)
+         so the handoff to the real app is seamless. Theme class is applied by
+         React after mount, so we honour prefers-color-scheme here to avoid a
+         dark→light flash for dark-mode users. */
+      #spk-boot {
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        background: #ffffff;
+        color: #111827;
+        font-family: Inter, system-ui, -apple-system, sans-serif;
+      }
+      @media (prefers-color-scheme: dark) {
+        #spk-boot { background: #111827; color: #f9fafb; }
+      }
+      #spk-boot .spk-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        overflow: hidden;
+        background: rgba(37, 99, 235, 0.2);
+      }
+      #spk-boot .spk-bar-seg {
+        height: 100%;
+        width: 33%;
+        background: #2563eb;
+        animation: spk-slide 1.1s ease-in-out infinite;
+      }
+      #spk-boot .spk-brand {
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        animation: spk-pulse 1.4s ease-in-out infinite;
+      }
+      @keyframes spk-slide {
+        0% { transform: translateX(-100%); }
+        100% { transform: translateX(400%); }
+      }
+      @keyframes spk-pulse {
+        0%, 100% { opacity: 0.5; }
+        50% { opacity: 1; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        #spk-boot .spk-bar-seg, #spk-boot .spk-brand { animation: none; }
+      }
+    </style>
+    <script type="module" crossorigin src="/SparTrack-pages/assets/index-CQqGWPFW.js"></script>
+    <link rel="stylesheet" crossorigin href="/SparTrack-pages/assets/index-C5wf4k2H.css">
   <link rel="manifest" href="/SparTrack-pages/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/SparTrack-pages/registerSW.js"></script></head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div id="spk-boot" aria-hidden="true">
+        <div class="spk-bar"><div class="spk-bar-seg"></div></div>
+        <div class="spk-brand">⚡ SparTrack</div>
+      </div>
+    </div>
   </body>
 </html>
