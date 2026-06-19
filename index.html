@@ -14,14 +14,40 @@
     <meta property="og:description" content="Compare weekly supermarket deals across Aldi, REWE, Lidl, Kaufland, Netto, Penny, Edeka and more" />
     <meta property="og:type" content="website" />
     <title>SparTrack</title>
+    <script>
+      /* No-flash theme bootstrap. Runs synchronously in <head> BEFORE the
+         boot loader paints, so the resolved theme class is on <html> for the
+         very first frame. Must mirror getInitial() in
+         src/hooks/useDarkMode.ts: read localStorage("theme"); else honour
+         prefers-color-scheme (dark → "dark", not "navy"); else "light".
+         "dark" and "navy" both add the Tailwind `dark` baseline class. */
+      (function () {
+        try {
+          var THEMES = ["light", "dark", "navy"];
+          var stored = localStorage.getItem("theme");
+          var theme =
+            THEMES.indexOf(stored) !== -1
+              ? stored
+              : window.matchMedia("(prefers-color-scheme: dark)").matches
+                ? "dark"
+                : "light";
+          var root = document.documentElement;
+          root.classList.add(theme);
+          if (theme === "dark" || theme === "navy") root.classList.add("dark");
+        } catch (e) {
+          /* localStorage blocked → fall through to light (no class). */
+        }
+      })();
+    </script>
     <style>
       /* Pre-React boot loader. Lives inside #root and is auto-removed the
          moment createRoot().render() commits (React replaces #root's
          children), so no cleanup JS is needed. Mirrors the in-app
          TopProgressBar (2px top bar, accent #2563eb, progress-slide keyframe)
-         so the handoff to the real app is seamless. Theme class is applied by
-         React after mount, so we honour prefers-color-scheme here to avoid a
-         dark→light flash for dark-mode users. */
+         so the handoff to the real app is seamless. The inline <head> script
+         above sets the <html> theme class before this paints, so the boot bg
+         keys off that class; the prefers-color-scheme query is only a fallback
+         for the rare case the script is blocked (no theme class on <html>). */
       #spk-boot {
         position: fixed;
         inset: 0;
@@ -35,8 +61,10 @@
         color: #111827;
         font-family: Inter, system-ui, -apple-system, sans-serif;
       }
+      html.dark #spk-boot { background: #111827; color: #f9fafb; }
+      html.navy #spk-boot { background: #050912; color: #f9fafb; }
       @media (prefers-color-scheme: dark) {
-        #spk-boot { background: #111827; color: #f9fafb; }
+        html:not(.light):not(.dark):not(.navy) #spk-boot { background: #111827; color: #f9fafb; }
       }
       #spk-boot .spk-bar {
         position: fixed;
@@ -71,8 +99,8 @@
         #spk-boot .spk-bar-seg, #spk-boot .spk-brand { animation: none; }
       }
     </style>
-    <script type="module" crossorigin src="/SparTrack-pages/assets/index-DgySttBo.js"></script>
-    <link rel="stylesheet" crossorigin href="/SparTrack-pages/assets/index-Uj66494Z.css">
+    <script type="module" crossorigin src="/SparTrack-pages/assets/index-C92KPbEk.js"></script>
+    <link rel="stylesheet" crossorigin href="/SparTrack-pages/assets/index-DKiN77FE.css">
   <link rel="manifest" href="/SparTrack-pages/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/SparTrack-pages/registerSW.js"></script></head>
   <body>
     <div id="root">
